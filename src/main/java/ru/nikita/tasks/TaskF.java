@@ -13,13 +13,13 @@ public class TaskF {
         double BMI = (weight / (height * height));
         System.out.printf("%.2f", BMI);
         if (BMI < 18.5) {
-            System.out.println("У вас недостаточнй вес");
+            System.out.println(" -- У вас недостаточнй вес");
         }
         if (BMI > 18.4 && BMI < 30) {
             System.out.println(" -- У вас нормальный вес");
         }
         if (BMI > 29.5) {
-            System.out.println("У вас ожирение");
+            System.out.println(" -- У вас ожирение");
         }
 
     }

@@ -1,6 +1,6 @@
 package ru.nikita.tasks;
 
-public class TaskShtrav {
+public class FineTask {
     public static void main(String[] args) {
         byte b = 10;
         int i = 15;
