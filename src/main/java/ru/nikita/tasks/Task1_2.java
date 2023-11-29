@@ -2,7 +2,7 @@ package ru.nikita.tasks;
 
 import java.util.Scanner;
 
-public class Zadach2 {
+public class Task1_2 {
     public static void main( String args[]) {
         Scanner in = new Scanner(System.in);
         System.out.println("Напишите 3 числа");
