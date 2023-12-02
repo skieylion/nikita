@@ -10,20 +10,15 @@ public class OperTask3 {
 
         if (x == 1) {
             System.out.println("Понедельник");
-        }
-        if (x == 2) {
+        } else if (x == 2) {
             System.out.println("Вторник");
-        }
-        if (x == 3) {
+        } else if (x == 3) {
             System.out.println("Среда");
-        }
-        if (x == 4) {
+        } else if (x == 4) {
             System.out.println("Четверг");
-        }
-        if (x == 5) {
+        } else if (x == 5) {
             System.out.println("Пятница");
-        }
-        if (x == 6 | x == 7) {
+        } else if (x == 6 || x == 7) {
             System.out.println("Выходной");
         }
 
