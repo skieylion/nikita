@@ -8,9 +8,10 @@ public class OperTask8 {
         int n = r.nextInt(6);
         int x = 1;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             x *= i;
         }
+        System.out.println(x);
         System.out.println(n);
     }
 }
