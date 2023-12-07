@@ -9,6 +9,7 @@ public class CyclTask2 {
                     continue;
                 }
                 System.out.print(i);
+
                 System.out.println(j);
             }
 
