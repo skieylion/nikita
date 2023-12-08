@@ -18,16 +18,14 @@ public class MassTask5 {
         System.out.println();
 
         int[][] May = new int[5][2];
-
         int[] MinV = Arrays.stream(MasMay)
                 .mapToInt(row -> Arrays.stream(row).min().orElse(0))
                 .toArray();
-        System.out.println(Arrays.toString(MinV) + " - MinValue");
         int[] MaxV = Arrays.stream(MasMay)
                 .mapToInt(row -> Arrays.stream(row).max().orElse(0))
                 .toArray();
-        System.out.print(Arrays.toString(MaxV) + " - MaxValue");
-
+        System.out.println(Arrays.toString(MinV) + " - MinValue");
+        System.out.println(Arrays.toString(MaxV) + " - MaxValue");
     }
 }
 
