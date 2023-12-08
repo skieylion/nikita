@@ -27,6 +27,7 @@ public class MassTask5 {
                 .mapToInt(row -> Arrays.stream(row).max().orElse(0))
                 .toArray();
         System.out.print(Arrays.toString(MaxV) + " - MaxValue");
+
     }
 }
 
