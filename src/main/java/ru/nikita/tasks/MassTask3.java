@@ -8,7 +8,6 @@ public class MassTask3 {
             for (int j = 0; j < arrayOfSymbol[0].length; j++) {
                 arrayOfSymbol[i][j] = s + "" + (j + 1);
                 System.out.print(arrayOfSymbol[i][j] + " ");
-
             }
             s++;
             System.out.println();
