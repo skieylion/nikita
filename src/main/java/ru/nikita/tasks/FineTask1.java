@@ -8,7 +8,6 @@ public class FineTask1 {
             for (int j = 0; j < nums.length; j++) {
                 if (target == nums[i] + nums[j] && i != j) {
                     return new int[]{i, j};
-
                 }
             }
         }
