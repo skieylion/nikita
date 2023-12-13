@@ -15,6 +15,7 @@ public class FinalTask2 {
                             nums1[j] = nums2[i];
                             offset++;
                             continue lable;
+
                         }
 
                     }
