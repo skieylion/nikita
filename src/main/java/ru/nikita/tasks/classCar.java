@@ -23,11 +23,9 @@ class motor {
     double volume;
 
     int power;
-    
     int cost;
 
     void Start() {
-
     }
 
 }
