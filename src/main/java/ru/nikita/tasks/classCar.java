@@ -24,7 +24,6 @@ class motor {
 
     int power;
     int cost;
-
     void Start() {
     }
 }
