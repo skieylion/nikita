@@ -21,6 +21,7 @@ public class classCar {
 }
 class motor {
     double volume;
+
     int power;
     int cost;
 
