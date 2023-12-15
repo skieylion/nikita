@@ -1,55 +1,53 @@
 package ru.nikita.tasks;
 
-import java.util.Scanner;
-
 public class Car {
+
+    Engine engine = new Engine();
+
     String colour;
-
     String number;
-
-    int model;
-
+    String model;
     int speed;
-
     void Ride() {
-
     }
-
-    void Start() {
-
+    String ModelCar() {
+        model = model + " - " + engine.volume;
+        return model;
     }
-
-    void Stop() {
+    void StartOrStop() {
+        if (engine.mode == true) {
+            System.out.println("Машина завелась");
+        } else {
+            System.out.println("Машина не завелась");
+        }
     }
-
     void setSpeed() {
-        Scanner in = new Scanner(System.in);
-        int a = in.nextInt();
-        if (a == 1) {
-            speed = 1;
-        } else if (a == 2) {
-            speed = 2;
-        } else if (a == -1) {
-            speed = -1;
+        if (speed <= 200) {
+            System.out.println();
+        } else {
+            while (speed > 200) {
+                speed--;
+            }
         }
     }
 }
-
 class Engine {
 
-    int mode;
-    double volume;
 
-    int power;
-    int cost;
+
+    boolean mode;
+    double volume; // Объем двигателя
+
+    int power; // Мощность двигателя
+    int cost; // Затраты двигателя n км/л
 
 
     void Start() {
-        mode = 1;
+        mode = true;
     }
 
     void Stop() {
-        mode = 0;
+        mode = false;
     }
 
 }
