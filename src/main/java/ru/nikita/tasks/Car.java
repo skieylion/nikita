@@ -19,12 +19,12 @@ public class Car {
 
 
     void start() {
-        engine.getStart();
+        engine.start();
         System.out.println("Машина завелась");
     }
 
     void stop() {
-        engine.getStop();
+        engine.stop();
         System.out.println("Машина не завелась");
     }
 

@@ -1,16 +1,16 @@
 package ru.nikita.tasks;
 
 public class Engine {
-    boolean mode;
+    boolean active;
     double volume;
 
     int power; // Мощность двигателя
     int cost; // Затраты двигателя n км/л
 
 
-    void setMode(boolean mode) {
-        this.mode = mode;
-        if (mode) {
+    void setActive(boolean active) {
+        this.active = active;
+        if (active) {
             System.out.println("двигатель запущен");
         } else {
             System.out.println("двигатель остановлен");
@@ -18,17 +18,17 @@ public class Engine {
     }
 
     boolean isActive() {
-        return mode;
+        return active;
     }
 
-    boolean getStart() {
-        mode = true;
-        return mode;
+    void start() {
+        this.active = true;
+        System.out.println("двигатель запустился");
     }
 
-    boolean getStop() {
-        mode = false;
-        return mode;
+    void stop() {
+        this.active = false;
+        System.out.println("двигатель запустился");
     }
 
 }
