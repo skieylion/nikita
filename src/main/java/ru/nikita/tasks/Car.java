@@ -13,36 +13,32 @@ public class Car {
         engine = new Engine();
     }
 
-    void Ride() {
-    }
-
-    String modelCar() {
+    String getModelCar() {
         model = model + " - " + engine.volume;
         return model;
     }
 
 
-    void Start() {
+    void start() {
         if (engine.mode == true) {
             System.out.println("Машина завелась");
         }
     }
 
-    void Stop() {
+    void stop() {
         if (engine.mode == false) {
             System.out.println("Машина не завелась");
         }
     }
 
-    void setSpeed(int s) {
-        s = 140;
-        if (s < 200 && s >= 0) {
-            System.out.println("Скорость в норме");
-        } else  {
-            System.out.println("Speed error");
-            }
+    void setSpeed(int speed) {
+        if (speed < 200 && speed >= 0) {
+            this.speed = speed;
+        } else {
+            System.out.println("Скорость за пределами допустимого диапазона");
         }
     }
+}
 
 class Engine {
 
@@ -54,11 +50,12 @@ class Engine {
     int cost; // Затраты двигателя n км/л
 
 
-    void setMode() {
-        if (mode == true) {
-            System.out.println("Двигатель запущен");
-        } else if (mode == false) {
-            System.out.println("Двигатель остановлен");
+    void setMode(boolean mode) {
+        this.mode = mode;
+        if (mode) {
+            System.out.println("двигатель запущен");
+        } else {
+            System.out.println("двигатель остановлен");
         }
     }
 
