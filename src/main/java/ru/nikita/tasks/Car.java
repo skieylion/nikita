@@ -13,22 +13,19 @@ public class Car {
         engine = new Engine();
     }
 
-    String getModelCar() {
-        model = model + " - " + engine.volume;
-        return model;
+    String getModel() {
+        return model + " - " + engine.volume;
     }
 
 
     void start() {
-        if (engine.mode == true) {
-            System.out.println("Машина завелась");
-        }
+        engine.getStart();
+        System.out.println("Машина завелась");
     }
 
     void stop() {
-        if (engine.mode == false) {
-            System.out.println("Машина не завелась");
-        }
+        engine.getStop();
+        System.out.println("Машина не завелась");
     }
 
     void setSpeed(int speed) {
@@ -40,23 +37,6 @@ public class Car {
     }
 }
 
-class Engine {
 
 
-    boolean mode;
-    double volume; // Объем двигателя
 
-    int power; // Мощность двигателя
-    int cost; // Затраты двигателя n км/л
-
-
-    void setMode(boolean mode) {
-        this.mode = mode;
-        if (mode) {
-            System.out.println("двигатель запущен");
-        } else {
-            System.out.println("двигатель остановлен");
-        }
-    }
-
-}
