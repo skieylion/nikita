@@ -22,13 +22,11 @@ public class Engine {
     }
 
     void start() {
-        this.active = true;
-        System.out.println("двигатель запустился");
+        setActive(true);
     }
 
     void stop() {
-        this.active = false;
-        System.out.println("двигатель запустился");
+        setActive(false);
     }
 
 }
