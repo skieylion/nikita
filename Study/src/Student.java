@@ -40,10 +40,11 @@ public class Student {
         return grades;
     }
 
-    public static void fillStudentData(Student object, String name, int age, String major, String grades) {
-        object.setName(name);
-        object.setAge(age);
-        object.setMajor(major);
-        object.setGrades(grades);
+    public String toUpper(String name){
+        name = name.toLowerCase();
+        name = name.substring(0,1).toUpperCase() + name.substring(1);
+
+        return name;
     }
+
 }

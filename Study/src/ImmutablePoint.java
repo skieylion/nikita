@@ -1,13 +1,14 @@
+//создайте класс  ImmutablePoint с final полями x и y
 public class ImmutablePoint {
-    final int x1;
-    final int y1;
+    final int x;
+    final int y;
 
-    public ImmutablePoint() {
-        x1 = 12;
-        y1 = 13;
+    public ImmutablePoint(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
-    public int getX1(){
-        return x1;
+    public int getX(){
+        return x;
     }
 }

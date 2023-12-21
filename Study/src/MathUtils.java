@@ -1,4 +1,4 @@
-public class MathUtils {
+public final class MathUtils {
 
     double a;
     int x;
@@ -14,13 +14,12 @@ public class MathUtils {
     }
 
     public static int getMax(int x, int y){
-        int max = 0;
         if (x > y){
-            max = x;
-            return max;
+            return x;
         }
-        else max = y;
-        return max;
+        else {
+            return y;
+        }
     }
 
 }
