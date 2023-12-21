@@ -1,11 +1,17 @@
 package ru.nikita.tasks;
 
 public class Engine {
+
+    Engine engine;
     boolean active;
     double volume;
 
     int power; // Мощность двигателя
     int cost; // Затраты двигателя n км/л
+
+    Engine() {
+        engine = new Engine();
+    }
 
 
     void setActive(boolean active) {

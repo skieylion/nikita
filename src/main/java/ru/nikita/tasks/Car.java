@@ -27,6 +27,11 @@ public class Car {
         System.out.println("Номер машины - " + number);
     }
 
+    void setColour(String colour) {
+        this.colour = colour;
+        System.out.println("Цвет машины - " + colour);
+    }
+
 
     void start() {
         engine.start();
