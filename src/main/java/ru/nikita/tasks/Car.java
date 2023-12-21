@@ -17,10 +17,14 @@ public class Car {
         return model + " - " + engine.volume;
     }
 
-    void setModel(String model, String number) {
+    void setModel(String model) {
         this.model = model;
+        System.out.println("Модель машины - " + model);
+    }
+
+    void setNumber(String number) {
         this.number = number;
-        System.out.println(model + " - С номером машины - " + number);
+        System.out.println("Номер машины - " + number);
     }
 
 
