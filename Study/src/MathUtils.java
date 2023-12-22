@@ -5,19 +5,18 @@ public final class MathUtils {
     int y;
 
 
-    public static double getFactorial(double a){
+    public static double getFactorial(double a) {
         int factorial = 1;
-        for (int i = 1; i <= a; i++){
+        for (int i = 1; i <= a; i++) {
             factorial = factorial * i;
         }
         return factorial;
     }
 
-    public static int getMax(int x, int y){
-        if (x > y){
+    public static int getMax(int x, int y) {
+        if (x > y) {
             return x;
-        }
-        else {
+        } else {
             return y;
         }
     }

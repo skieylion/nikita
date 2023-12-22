@@ -1,4 +1,4 @@
-//создайте класс  ImmutablePoint с final полями x и y
+/**создайте класс  ImmutablePoint с final полями x и y*/
 public class ImmutablePoint {
     final int x;
     final int y;
@@ -8,7 +8,11 @@ public class ImmutablePoint {
         this.y = y;
     }
 
-    public int getX(){
+    public int getX() {
         return x;
+    }
+
+    public int getY() {
+        return y;
     }
 }

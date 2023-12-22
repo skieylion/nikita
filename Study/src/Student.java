@@ -40,7 +40,7 @@ public class Student {
         return grades;
     }
 
-    public String toUpper(String name){
+    public String withFirstSymbpolAsUpper(String name){
         name = name.toLowerCase();
         name = name.substring(0,1).toUpperCase() + name.substring(1);
 

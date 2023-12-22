@@ -1,24 +1,21 @@
 public class Calculator {
-    int num1;
-    int num2;
 
+    public static int add( int... args) {
 
-    public Calculator(int num1, int num2) {
-        this.num1 = num1;
-        this.num2 = num2;
-
+        int resultSum = 0;
+        for (int value : args) {
+            resultSum = resultSum + value;
+        }
+        System.out.println(resultSum);;
+        return resultSum;
     }
-//add,substruct, divide, multiply
-    public int add() {
-        return num1 + num2;
-    }
-    public int substruct() {
+    public static int substruct(int num1, int num2) {
         return num1 - num2;
     }
-    public int divide() {
+    public static int divide(int num1, int num2) {
         return num1 / num2;
     }
-    public int multiply() {
+    public static int multiply(int num1, int num2) {
         return num1 * num2;
     }
 }
