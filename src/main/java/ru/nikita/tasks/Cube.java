@@ -1,11 +1,15 @@
 package ru.nikita.tasks;
 
 public class Cube {
-    int height, width, length;
+    double height, width, length;
 
-    Cube(int height, int length, int width) {
-        this.height = 2;
-        this.length = 5;
-        this.width = 3;
+    Cube(double height, double width, double length) {
+        this.height = height;
+        this.length = length;
+        this.width = width;
+    }
+
+    public void volume(double volume){
+        volume = height * length * width;
     }
 }
