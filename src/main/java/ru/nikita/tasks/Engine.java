@@ -8,6 +8,10 @@ public class Engine {
     int power; // Мощность двигателя
     int cost; // Затраты двигателя n км/л
 
+    Engine() {
+
+    }
+
 
     void setActive(boolean active) {
         this.active = active;
