@@ -5,6 +5,7 @@ public class Main {
         task2_2();
         task3_1();
         task4();
+        task5();
 
     }
 
@@ -22,7 +23,8 @@ public class Main {
 
     static void task1_2() {
         System.out.println(Calculator.add(1, 2, 5, 2));
-        System.out.println(Calculator.substruct(5, 2));
+        System.out.println(Calculator.add(1, 2, null));
+        System.out.println(Calculator.substruct(5,2));
         System.out.println(Calculator.divide(10, 2));
         System.out.println(Calculator.multiply(2, 2));
     }
@@ -49,5 +51,14 @@ public class Main {
     static void task4() {
         Printer.printInfo("Mila", "dog", "chihua");
         Printer.printInfo("car", "bmw");
+        Printer.printInfo(null);
+    }
+
+    static void task5(){
+        System.out.println(Rectangle.area(2,3));
+        System.out.println(Rectangle.area(8.0, 150.0));
+        System.out.println(Square.area(5));
+        System.out.println(Parallelogram.area(4,7));
+        System.out.println(Parallelogram.area(10,10,150));
     }
 }

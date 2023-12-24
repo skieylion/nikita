@@ -1,12 +1,12 @@
 public class Calculator {
 
-    public static int add( int... args) {
-
-        int resultSum = 0;
-        for (int value : args) {
-            resultSum = resultSum + value;
+    public static int add(int a, int b, int... args) {
+        int resultSum = a + b;
+        if (args != null){
+            for (int i = 0; i < args.length; i++){
+                resultSum += args[i];
+            }
         }
-        System.out.println(resultSum);;
         return resultSum;
     }
     public static int substruct(int num1, int num2) {
