@@ -8,8 +8,11 @@ public class Engine {
     int power; // Мощность двигателя
     int cost; // Затраты двигателя n км/л
 
-    Engine() {
-
+    Engine(double volume, int power, int cost, boolean active) {
+        this.active = active;
+        this.power = power;
+        this.cost = cost;
+        this.volume = volume;
     }
 
 
