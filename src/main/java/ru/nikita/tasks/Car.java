@@ -10,11 +10,26 @@ public class Car {
     int speed;
 
     Car() {
-        engine = new Engine();
+        engine = new Engine(10, 10, 10,false);
     }
 
     String getModel() {
         return model + " - " + engine.volume;
+    }
+
+    void setModel(String model) {
+        this.model = model;
+        System.out.println("Модель машины - " + model);
+    }
+
+    void setNumber(String number) {
+        this.number = number;
+        System.out.println("Номер машины - " + number);
+    }
+
+    void setColour(String colour) {
+        this.colour = colour;
+        System.out.println("Цвет машины - " + colour);
     }
 
 
