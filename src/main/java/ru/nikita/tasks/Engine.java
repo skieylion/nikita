@@ -5,13 +5,13 @@ public class Engine {
     boolean active;
     double volume;
 
-    int power; // Мощность двигателя
-    int cost; // Затраты двигателя n км/л
+    int power;
+    int consumption; // Затраты двигателя n км/л
 
-    Engine(double volume, int power, int cost, boolean active) {
+    Engine(double volume, int power, int consumption, boolean active) {
         this.active = active;
         this.power = power;
-        this.cost = cost;
+        this.consumption = consumption;
         this.volume = volume;
     }
 
