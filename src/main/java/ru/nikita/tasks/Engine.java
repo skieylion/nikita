@@ -6,9 +6,9 @@ public class Engine {
     double volume;
 
     int power;
-    int consumption; // Затраты двигателя n км/л
+    double consumption;
 
-    Engine(double volume, int power, int consumption, boolean active) {
+    Engine(double volume, int power, double consumption, boolean active) {
         this.active = active;
         this.power = power;
         this.consumption = consumption;
