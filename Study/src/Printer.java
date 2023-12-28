@@ -1,8 +1,8 @@
 public class Printer {
 
-    static void printInfo(String... info) {
-        if (info != null) {
-            for (String inf : info) {
+    static void printArgs(String... args) {
+        if (args != null) {
+            for (String inf : args) {
                 System.out.print(inf + " ");
             }
         }

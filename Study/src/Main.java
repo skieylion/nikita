@@ -24,9 +24,9 @@ public class Main {
     static void task1_2() {
         System.out.println(Calculator.add(1, 2, 5, 2));
         System.out.println(Calculator.add(1, 2, null));
-        System.out.println(Calculator.substruct(5,2));
-        System.out.println(Calculator.divide(10, 2));
-        System.out.println(Calculator.multiply(2, 2));
+        System.out.println(Calculator.substruct(5,2, 2));
+        System.out.println(Calculator.divide(10, 2, 2));
+        System.out.println(Calculator.multiply(2, 2, 2));
     }
 
     static void task2_2() {
@@ -45,20 +45,26 @@ public class Main {
 
         System.out.println(MathUtils.getFactorial(a));
         System.out.println(MathUtils.getMax(x, y));
-        MathUtils.getFactorial(Constants.PI);
     }
 
     static void task4() {
-        Printer.printInfo("Mila", "dog", "chihua");
-        Printer.printInfo("car", "bmw");
-        Printer.printInfo(null);
+        Printer.printArgs("Mila", "dog", "chihua");
+        Printer.printArgs("car", "bmw");
+        Printer.printArgs(null);
     }
 
     static void task5(){
-        System.out.println(Rectangle.area(2,3));
-        System.out.println(Rectangle.area(8.0, 150.0));
-        System.out.println(Square.area(5));
-        System.out.println(Parallelogram.area(4,7));
-        System.out.println(Parallelogram.area(10,10,150));
+
+        Rectangle rectangle = new Rectangle(5,4);
+        System.out.println(rectangle.calculateArea());
+
+        Square square  = new Square(5);
+        System.out.println(square.calculate_area());
+
+        Parallelogram parallelogram1 = new Parallelogram(4, 7);
+        System.out.println(parallelogram1.calculateArea());
+
+        Parallelogram parallelogram2 = new Parallelogram(10, 10, 150);
+        System.out.println(parallelogram2.calculateArea_with_angle());
     }
 }

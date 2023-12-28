@@ -1,10 +1,10 @@
 public class Square {
-    int side;
+    double side;
 
-    Square(int side){
+    Square(double side){
         this.side = side;
     }
-    public static int area(int side) {
+    public double calculate_area() {
         return side*side;
     }
 }

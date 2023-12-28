@@ -1,25 +1,25 @@
 public class Parallelogram {
-    double side1;
-    double side2;
+    double width;
+    double base;
     double height;
-    double angle;
+    double degree_angle;
 
-    Parallelogram(double side1, double height) {
-        this.side1 = side1;
+    Parallelogram(double base, double height) {
+        this.base = base;
         this.height = height;
     }
 
-    Parallelogram(double side1, double side2, double angle) {
-        this.side1 = side1;
-        this.side2 = side2;
-        this.angle = angle;
+    Parallelogram(double base, double width, double degree_angle) {
+        this.base = base;
+        this.width = width;
+        this.degree_angle = degree_angle;
     }
 
-    public static double area(double side1,double side2, double angle){
-        return (side1 * side2 * Math.sin(Math.toRadians(angle)));
+    public double calculateArea_with_angle(){
+        return base * width * Math.sin(Math.toRadians(degree_angle));
     }
-    public static double area(double side1, double height){
-        return (side1 * height);
+    public double calculateArea(){
+        return (base * height);
     }
 
 
