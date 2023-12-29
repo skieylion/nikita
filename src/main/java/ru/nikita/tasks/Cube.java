@@ -1,34 +1,30 @@
 package ru.nikita.tasks;
 
-import java.util.Random;
-
 public class Cube {
 
 
+    Square square;
 
-    static Square square = new Square(1, 2);
+    CubeHeight cuhei = new CubeHeight();
 
     double height, width, length;
 
     Cube(double height, double width, double length) {
+        square = new Square();
         this.height = height;
         this.length = length;
         this.width = width;
+
     }
 
     double getVolume() {
         return height * length * width;
     }
 
-    void setHeight(double height) {
-        this.height = height;
-    }
-
-    public static void cubeOfSquareAndHeight(double width, double length, Random height) {
-        Random random = new Random(1000);
-        width = square.width;
-        length = square.length;
-        height = random;
+    public void cubeOfSquareAndHeight(double width, double length, double height) {
+        width = square.getWidth();
+        length = square.getLength();
+        height = cuhei.getHeight();
     }
 
 
