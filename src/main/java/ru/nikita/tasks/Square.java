@@ -1,23 +1,15 @@
 package ru.nikita.tasks;
 
 public class Square {
-    double length;
-    double width;
+    double side;
 
-    void setLength(double length) {
-        this.length = length;
+    void setSide(double side) {
+        this.side = side;
     }
 
-    double getLength() {
-        return length;
+    double getSide() {
+        return side;
     }
 
-    void setWidth(double width) {
-        this.width = width;
-    }
-
-    double getWidth() {
-        return width;
-    }
 
 }

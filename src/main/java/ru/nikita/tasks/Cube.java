@@ -2,29 +2,19 @@ package ru.nikita.tasks;
 
 public class Cube {
 
+    double side;
 
-    Square square;
-
-    CubeHeight cuhei = new CubeHeight();
-
-    double height, width, length;
-
-    Cube(double height, double width, double length) {
-        square = new Square();
-        this.height = height;
-        this.length = length;
-        this.width = width;
-
+    Cube(double side) {
+        this.side = side;
     }
 
     double getVolume() {
-        return height * length * width;
+        return side * side * side;
     }
 
-    public void cubeOfSquareAndHeight(double width, double length, double height) {
-        width = square.getWidth();
-        length = square.getLength();
-        height = cuhei.getHeight();
+    public static Cube cubeOfSquare(double side) {
+        Square square = new Square();
+        return new Cube(square.getSide());
     }
 
 

@@ -2,16 +2,17 @@ package ru.nikita.tasks;
 
 public class Car {
 
-
-    Engine engine;
     String colour;
     String number;
     String model;
     int speed;
 
-    Car() {
-        engine = new Engine(10, 10, 10, false);
+    Car(Engine engine) {
+        this.engine = engine;
     }
+
+    Engine engine = new Engine(10, 10, 10, false);
+
 
     String getModel() {
         return model + " - " + engine.volume;

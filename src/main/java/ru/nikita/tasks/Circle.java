@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Circle {
     public static final double PI = 3.14;
 
-    Double radius;
+    double radius;
 
     double getArea() {
         return PI * radius * radius;
