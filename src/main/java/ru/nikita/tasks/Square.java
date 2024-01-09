@@ -1,9 +1,10 @@
 package ru.nikita.tasks;
 
 public class Square {
-    double side;
 
-    void setSide(double side) {
+    private final double side;
+
+    Square(double side) {
         this.side = side;
     }
 

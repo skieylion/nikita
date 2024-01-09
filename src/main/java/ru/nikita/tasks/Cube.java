@@ -4,7 +4,7 @@ public class Cube {
 
     double side;
 
-    Cube(double side) {
+    private Cube(double side) {
         this.side = side;
     }
 
@@ -12,10 +12,7 @@ public class Cube {
         return side * side * side;
     }
 
-    public static Cube cubeOfSquare(double side) {
-        Square square = new Square();
-        return new Cube(square.getSide());
+   public static Cube cubeOfSquare(Square square) {
+       return new Cube(square.getSide());
     }
-
-
 }
