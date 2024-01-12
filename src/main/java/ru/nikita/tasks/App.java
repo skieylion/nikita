@@ -17,8 +17,14 @@ public class App {
         System.out.println("Умножение - " + calculator.multiply(1, 2, 3, 4, 5, 6, 7));
         System.out.println("Деление - " + calculator.divide(512, 2, 2, 2, 2, 2, 2));
         */
-
+        Time time1 = new Time(23, 23, 23);
+        System.out.println(time1.hour + ":" + time1.plus(20) + ":" + time1.second);
+        System.out.println();
+        Time time2 = new Time(23, 23, 23);
+        System.out.println(time2.hour + ":" + time2.minus(20) + ":" + time2.second);
+        System.out.println();
         show();
+
     }
 
     public static void show() {
@@ -29,6 +35,5 @@ public class App {
         Time time3 = new Time(22);
         System.out.println(time3.hour + ":" + time3.minutes + "0:0" + time3.second);
     }
-
 
 }

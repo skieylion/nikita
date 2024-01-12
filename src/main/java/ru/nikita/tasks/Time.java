@@ -20,10 +20,12 @@ public class Time {
     Time(int h) {
         this.hour = h;
     }
-
-    public void plus(int h, int m, int s) {
-
-
+    int plus(int p) {
+        this.minutes += p;
+        return minutes;
     }
-
+    int minus(int m) {
+        this.minutes -= m;
+        return minutes;
+    }
 }
