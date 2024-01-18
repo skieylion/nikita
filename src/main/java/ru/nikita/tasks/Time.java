@@ -1,5 +1,7 @@
 package ru.nikita.tasks;
 
+import java.util.Random;
+
 public class Time {
 
     int hour;
@@ -20,12 +22,42 @@ public class Time {
     Time(int h) {
         this.hour = h;
     }
+
+    int getHour() {
+        return hour;
+    }
+
+    int getMinutes() {
+        return minutes;
+    }
+
+    int getSecond() {
+        return second;
+    }
+
+
     int plus(int p) {
         this.minutes += p;
         return minutes;
     }
-    int minus(int m) {
-        this.minutes -= m;
+
+    int substruct(int substruct) {
+        this.minutes -= substruct;
         return minutes;
     }
+
+    void time() {
+        int min = getMinutes();
+        int sec = getSecond();
+        if (min < 10) {
+            System.out.println("+" + getHour() + ":0" + getMinutes() + ":" + getSecond());
+        } else if (sec < 10) {
+            System.out.println("+" + getHour() + ":" + getMinutes() + ":0" + getSecond());
+        } else if (sec < 10 & min < 10) {
+            System.out.println("+" + getHour() + ":0" + getMinutes() + ":0" + getSecond());
+        } else {
+            System.out.println("+" + getHour() + ":" + getMinutes() + ":" + getSecond());
+        }
+    }
 }
+
