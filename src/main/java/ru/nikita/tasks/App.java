@@ -6,21 +6,6 @@ import static java.awt.AWTEventMulticaster.add;
 
 public class App {
     public static void main(String[] args) {
-        Random random = new Random();
-        /*Square square1 = new Square((int) (random.nextDouble() * 100));
-        Square square2 = new Square((int) (random.nextDouble() * 100));
-        System.out.println(square2.getSide());
-        Cube cube1 = Cube.cubeOfSquare(square1);
-        Cube cube2 = Cube.cubeOfSquare(square2);
-        System.out.println();
-        Calculator calculator = new Calculator();
-
-
-        System.out.println("Сложение - " + calculator.add(1, 2, 3, 4, 5, 6, 7));
-        System.out.println("Вычетание - " + calculator.substruct(1, 2, 3, 4, 5, 6, 7));
-        System.out.println("Умножение - " + calculator.multiply(1, 2, 3, 4, 5, 6, 7));
-        System.out.println("Деление - " + calculator.divide(512, 2, 2, 2, 2, 2, 2));
-        */
         show();
 
 
@@ -31,7 +16,17 @@ public class App {
         Random random1 = new Random();
         Random random2 = new Random();
         Time time = new Time(random1.nextInt(25), random2.nextInt(60), random2.nextInt(60));
-        time.time();
+        int min = time.getMinutes();
+        int sec = time.getSecond();
+        if (min < 10) {
+            System.out.println("+" + time.getHour() + ":0" + time.getMinutes() + ":" + time.getSecond());
+        } else if (sec < 10) {
+            System.out.println("+" + time.getHour() + ":" + time.getMinutes() + ":0" + time.getSecond());
+        } else if (sec < 10 & min < 10) {
+            System.out.println("+" + time.getHour() + ":0" + time.getMinutes() + ":0" + time.getSecond());
+        } else {
+            System.out.println("+" + time.getHour() + ":" + time.getMinutes() + ":" + time.getSecond());
+        }
 
     }
 

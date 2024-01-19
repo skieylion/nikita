@@ -8,19 +8,19 @@ public class Time {
     int minutes;
     int second;
 
-    Time(int h, int m, int s) {
-        this.hour = h;
-        this.minutes = m;
-        this.second = s;
+    Time(int hour, int minutes, int second) {
+        this.hour = hour;
+        this.minutes = minutes;
+        this.second = second;
     }
 
-    Time(int h, int m) {
-        this.hour = h;
-        this.minutes = m;
+    Time(int hour, int minutes) {
+        this.hour = hour;
+        this.minutes = minutes;
     }
 
-    Time(int h) {
-        this.hour = h;
+    Time(int hour) {
+        this.hour = hour;
     }
 
     int getHour() {
@@ -46,18 +46,6 @@ public class Time {
         return minutes;
     }
 
-    void time() {
-        int min = getMinutes();
-        int sec = getSecond();
-        if (min < 10) {
-            System.out.println("+" + getHour() + ":0" + getMinutes() + ":" + getSecond());
-        } else if (sec < 10) {
-            System.out.println("+" + getHour() + ":" + getMinutes() + ":0" + getSecond());
-        } else if (sec < 10 & min < 10) {
-            System.out.println("+" + getHour() + ":0" + getMinutes() + ":0" + getSecond());
-        } else {
-            System.out.println("+" + getHour() + ":" + getMinutes() + ":" + getSecond());
-        }
-    }
+
 }
 
