@@ -6,13 +6,23 @@ import static java.awt.AWTEventMulticaster.add;
 
 public class App {
     public static void main(String[] args) {
-        show();
+        Random random = new Random();
+        Queue queue = new Queue();
+        queue.push(random.nextInt(15));
+        queue.push(random.nextInt(15));
+        queue.push(random.nextInt(15));
+        queue.push(random.nextInt(15));
+        queue.push(random.nextInt(15));
+        queue.pop();
+
+
 
 
     }
 
 
-    public static void show() {
+
+  /*  public static void show() {
         Random random1 = new Random();
         Random random2 = new Random();
         Time time = new Time(random1.nextInt(25), random2.nextInt(60), random2.nextInt(60));
@@ -29,6 +39,6 @@ public class App {
         }
 
     }
+*/
 
-
-}
+    }
