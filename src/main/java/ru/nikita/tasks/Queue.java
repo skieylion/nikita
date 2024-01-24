@@ -5,10 +5,11 @@ public class Queue {
     int size;
 
     int[] array;
-    int index = 0;
+    int index;
 
     Queue(int size) {
         this.size = size;
+        index = 0;
         array = new int[size];
     }
 
