@@ -2,24 +2,23 @@ package ru.nikita.tasks;
 
 public class Queue {
 
-    public static final int size = 3;
+    int size;
 
     int[] array;
-    int i = 0;
+    int index = 0;
 
-    Queue() {
+    Queue(int size) {
+        this.size = size;
         array = new int[size];
     }
 
 
     public void push(int element) {
-        array[i++%size] = element;
-        System.out.println(array[0] + " " + array[1] + " " + array[2] + " + ");
+        array[index++ % this.size] = element;
     }
 
     public void pop() {
-        array[--i%size] = 0;
-        System.out.println(array[0] + " " + array[1] + " " + array[2] + " - ");
+        array[--index % size] = 0;
     }
 
 
