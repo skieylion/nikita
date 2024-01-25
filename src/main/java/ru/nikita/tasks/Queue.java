@@ -2,9 +2,9 @@ package ru.nikita.tasks;
 
 public class Queue {
 
-    int size;
+    private int size;
 
-    int[] array;
+    private int[] array;
     int index;
 
     Queue(int size) {
