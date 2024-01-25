@@ -13,13 +13,9 @@ public class App {
         Node node4 = new Node(4);
         Node root = new Node(1);
         root.setNext(node1);
-        node1.setPrev(root);
         node1.setNext(node2);
-        node2.setPrev(node1);
         node2.setNext(node3);
-        node3.setPrev(node2);
         node3.setNext(node4);
-        node4.setPrev(node3);
     }
 
 }
