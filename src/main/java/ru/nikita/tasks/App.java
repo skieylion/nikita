@@ -1,21 +1,25 @@
 package ru.nikita.tasks;
 
-import java.util.Arrays;
-import java.util.Random;
-
 import static java.awt.AWTEventMulticaster.add;
 
 public class App {
     public static void main(String[] args) {
-        Node node1 = new Node(3);
-        Node node2 = new Node(5);
-        Node node3 = new Node(2);
-        Node node4 = new Node(4);
-        Node root = new Node(1);
-        root.setNext(node1);
-        node1.setNext(node2);
-        node2.setNext(node3);
-        node3.setNext(node4);
+
+        Client client = new Client();
+
+        client.setAge(16);
+        client.setName("Ваня");
+        client.setProfession(" -- ");
+        client.getFullName();
+
+        Employee employee = new Employee();
+
+        employee.setAge(25);
+        employee.setName("Александр");
+        employee.setProfession(" Официант ");
+        employee.setExperience(3);
+        employee.getFullName();
+
     }
 
 }
