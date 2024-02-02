@@ -4,9 +4,7 @@ import static java.awt.AWTEventMulticaster.add;
 
 public class App {
     public static void main(String[] args) {
-
         plus(10);
-
     }
 
     public static void plus (int x) {
