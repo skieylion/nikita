@@ -1,5 +1,13 @@
 package ru.nikita.tasks;
 
 public class Car {
-    int value;
+    private static int count = 0;
+
+    Car() {
+        count++;
+    }
+
+    public static int getCount() {
+        return count;
+    }
 }
