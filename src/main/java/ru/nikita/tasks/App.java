@@ -7,7 +7,7 @@ public class App {
 
         Calculator cal = new Calculator();
 
-        cal.meanValue(1, 2, 3, 4, 5);
+        cal.averageValue(1, 2, 3, 4, 5);
 
     }
 
