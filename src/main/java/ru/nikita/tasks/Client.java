@@ -2,12 +2,21 @@ package ru.nikita.tasks;
 
 public class Client extends Person{
 
+    float score;
     int age;
 
     String request;
 
     public void setAge(int age) {
         this.age = age;
+    }
+    public void setScore(float score) {
+        this.score = score;
+    }
+
+
+    public float getScore() {
+        return score;
     }
 
     public int getAge() {
@@ -23,7 +32,7 @@ public class Client extends Person{
     }
 
     public void client() {
-        System.out.println(" " + getAge() + " " + getRequest());
+        System.out.println(" " + getAge() + " " + getRequest() + " - " + getScore());
     }
 
 }

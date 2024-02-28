@@ -10,9 +10,9 @@ public class App {
 
         client.setName("Никита");
         employee.setName("Женя");
-        client.setSecondName("вфыв");
-        employee.setSecondName("вфыв");
-        client.setProfession("Студет");
+        client.setSecondName("Иванников");
+        employee.setSecondName("Иванников");
+        client.setScore(4.5f);
         employee.setProfession("Программист");
         client.setAge(19);
         client.setRequest("Хочу программировать");
