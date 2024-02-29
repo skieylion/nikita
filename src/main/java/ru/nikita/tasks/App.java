@@ -18,10 +18,8 @@ public class App {
         client.setRequest("Хочу программировать");
         employee.setExperience(5);
 
-        client.getFullName();
-        client.client();
-        employee.getFullName();
-        employee.employee();
+        System.out.println(client.client());
+        System.out.println(employee.employee());
 
     }
 }

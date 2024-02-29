@@ -31,8 +31,8 @@ public class Client extends Person{
         return request;
     }
 
-    public void client() {
-        System.out.println(" " + getAge() + " " + getRequest() + " - " + getScore());
+    public String client() {
+        return getFullName() + " " + getAge() + " " + getRequest() + " - " + getScore();
     }
 
 }

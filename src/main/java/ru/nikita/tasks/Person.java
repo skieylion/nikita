@@ -21,8 +21,8 @@ public class Person {
     }
 
 
-    public void getFullName () {
-        System.out.print(getName() + " " + getSecondName() + " ");
+    public String getFullName () {
+        return getName() + " " + getSecondName() + " ";
     }
 
 }

@@ -22,8 +22,8 @@ public class Employee extends Person {
         return profession;
     }
 
-    public void employee() {
-        System.out.println(" " + getExperience() + " " + getProfession());
+    public String employee() {
+        return getFullName() + " " + getExperience() + " " + getProfession();
     }
 
 }
