@@ -21,6 +21,26 @@ public class App {
         System.out.println(client.client());
         System.out.println(employee.employee());
 
+
+
+
+
+
+        int n = 4;
+        Animal[] animals = new Animal[n];
+        for (int i = 0; i < n; i++) {
+            animals[i] = i % 2 == 0? new Cow() : new Cat();
+            animals[i].test();
+        }
+
+        Venicle venicle = new Car();
+
+        venicle.display();
+
+        PersonA personA = new PersonA("Jenya", 30);
+
+        System.out.println(personA.toString());
+
     }
 }
 
