@@ -1,8 +1,8 @@
 package ru.nikita.tasks;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
 
-    public void speak (){
+    public void voice() {
         System.out.println("Гав");
     }
 }
