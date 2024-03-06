@@ -1,13 +1,9 @@
 package ru.nikita.tasks;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
-    public void speak (){
+    public void voice() {
         System.out.println("Мяу");
     }
 
-    public void test () {
-        System.out.println("МЯЯЯЯЯЯЯЯУУУУУУУ");
-        super.test();
-    }
 }

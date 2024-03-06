@@ -1,8 +1,6 @@
 package ru.nikita.tasks;
 
-public class Animal {
+public abstract class Animal {
 
-    public void test () {
-        System.out.println("test");
-    }
+    public abstract void voice();
 }
