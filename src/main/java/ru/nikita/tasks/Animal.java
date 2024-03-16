@@ -1,6 +1,7 @@
 package ru.nikita.tasks;
 
-public abstract class Animal {
+public class Animal {
 
-    public abstract void voice();
+    public void voice() {
+    };
 }
