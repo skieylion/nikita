@@ -9,11 +9,9 @@ public class App {
     static void print(Animal animal) {
         if (animal instanceof Tiger) {
             System.out.println("Я тигр");
-        }
-        if (animal instanceof Dog) {
+        } else if (animal instanceof Dog) {
             System.out.println("Я Собака");
-        }
-        if (animal instanceof  Cat){
+        } else if (animal instanceof Cat) {
             System.out.println("Я Кот");
         }
     }
