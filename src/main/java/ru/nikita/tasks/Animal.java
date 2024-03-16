@@ -1,6 +1,11 @@
 package ru.nikita.tasks;
 
-public abstract class Animal {
+public class Animal {
 
-    public abstract void voice();
+    Animal() {
+        System.out.println("Animal_2_constructor");
+    }
+
+    public void voice() {
+    };
 }
